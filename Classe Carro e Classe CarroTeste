@@ -1,0 +1,33 @@
+public class Carro {
+    private String marca;
+    private String modelo;
+    private int ano;
+
+    public Carro(String marca, String modelo, int ano) {
+        this.marca = marca;
+        this.modelo = modelo;
+        this.ano = ano;
+    }
+
+    public void ligar() {
+        System.out.println("O carro está ligado.");
+    }
+
+    public void desligar() {
+        System.out.println("O carro está desligado.");
+    }
+
+    // Outros métodos e getters e setters conforme necessário
+}
+
+public class CarroTeste {
+    public static void main(String[] args) {
+        Carro carro1 = new Carro("Toyota", "Corolla", 2020);
+        carro1.ligar();
+        carro1.desligar();
+
+        Carro carro2 = new Carro("Honda", "Civic", 2019);
+        carro2.ligar();
+        carro2.desligar();
+    }
+}
