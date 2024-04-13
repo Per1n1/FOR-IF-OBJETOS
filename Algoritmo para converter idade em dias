@@ -1,0 +1,10 @@
+public class IdadeEmDias {
+    public static void main(String[] args) {
+        int anos = 3;
+        int meses = 2;
+        int dias = 15;
+
+        int idadeEmDias = anos * 365 + meses * 30 + dias;
+        System.out.println("A idade expressa em dias é: " + idadeEmDias + " dias.");
+    }
+}
